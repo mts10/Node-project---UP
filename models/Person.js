@@ -62,7 +62,6 @@ const personSchema = new mongoose.Schema({
     }
   }
 });
-/*oooo*/
 personSchema.set('toJSON', { getters: true });
 
 personSchema.pre('save', async function(next) {

@@ -1,7 +1,7 @@
 //configuracao inicial
 // Não me resposabilizo por qualquer irritação de usabilidade dessa gambiarra abaixo.
 const express = require('express');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 const uploadRouter = require('./upload'); // Caminho para o arquivo upload.js
 const app = express();
 

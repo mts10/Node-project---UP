@@ -16,6 +16,14 @@ app.use(
 
 app.use(express.json())
 
+// Rota para excluir usuário pelo código
+const deleteUserByCode = require('./routes/deleteUserByCode');
+app.use('/person/delete', deleteUserByCode);
+
+//Rota para editar status e imagem do usuario por codigo
+const editUserRoutes = require('./routes/editUser');
+app.use('/person/edit', editUserRoutes);
+
 //Rotas da API - Cadastrar usuario
 app.post('/person', async (req,res)=>{
     // req.body
